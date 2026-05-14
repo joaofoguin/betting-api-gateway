@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel Integrador SD</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- TELA DE LOGIN -->
+    <div id="telaLogin" class="auth-container">
+        <div class="card login-card">
+            <h2>🔐 Acesso Restrito</h2>
+            <p>Faça login para gerenciar o ecossistema</p>
+            <input type="text" id="user" placeholder="Usuário">
+            <input type="password" id="pass" placeholder="Senha">
+            <button class="btn-blue" onclick="executarLogin()">ENTRAR</button>
+        </div>
+    </div>
+
+    <!-- TELA PRINCIPAL (Painel de Controle) -->
+    <div id="telaPrincipal" style="display: none;">
+        <header class="main-header">
+            <h1>🛡️ Integrador de APIs</h1>
+            <button class="btn-logout" onclick="logout()">Sair</button>
+        </header>
+
+        <main class="container">
+            <!-- SEÇÃO LUTADORES -->
+            <section class="card">
+                <h2>👤 Sessão de Lutadores</h2>
+                <div class="form-group">
+                    <input type="text" id="nomeLutador" placeholder="Nome Completo">
+                    <input type="text" id="apelidoLutador" placeholder="Apelido">
+                    <input type="text" id="catLutador" placeholder="Categoria">
+                    <input type="text" id="arteLutador" placeholder="Arte Marcial">
+                    <button class="btn-blue" onclick="cadastrarLutador()">ADICIONAR LUTADOR</button>
+                </div>
+                <h3>Lutadores na API Externa</h3>
+                <div id="listaLutadores" class="list-container"></div>
+            </section>
+
+            <!-- SEÇÃO LUTAS -->
+            <section class="card">
+                <h2>⚔️ Sessão de Lutas</h2>
+                <div class="form-group">
+                    <input type="date" id="dataLuta">
+                    <input type="time" id="horaLuta">
+                    <label>Desafiante 1:</label>
+                    <select id="selLutador1"></select>
+                    <label>Desafiante 2:</label>
+                    <select id="selLutador2"></select>
+                    <button class="btn-green" onclick="agendarLuta()">CONFIRMAR AGENDAMENTO</button>
+                </div>
+                <h3>Confrontos (Sua API)</h3>
+                <div id="listaLutas" class="list-container"></div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

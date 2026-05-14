@@ -1,0 +1,28 @@
+# ==========================================
+# .gitignore - Gateway Integrador
+# ==========================================
+
+# 1. Chaves Privadas (SEGURANÇA CRÍTICA)
+# Nunca envie a chave privada para o repositório público!
+private_key.pem
+*private*.pem
+*private*.key
+
+# 2. Arquivos de Ambiente (Variáveis e Senhas)
+.env
+
+# 3. Arquivos do Python (Cache e Compilados)
+__pycache__/
+*.py[cod]
+*$py.class
+
+# 4. Ambientes Virtuais (Venv)
+venv/
+.venv/
+env/
+
+# 5. Sistema Operacional e IDEs
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
