@@ -1,4 +1,3 @@
-````markdown id="e7gk3p"
 # 🛡️ API Gateway & Cliente Web - Apostas em Lutas
 
 Este repositório atua como o **API Gateway** e a interface de usuário (**Frontend**) para o ecossistema distribuído de agendamento de lutas. Desenvolvido como parte da disciplina de Sistemas Distribuídos, este serviço é a única porta de entrada para os usuários, orquestrando a comunicação com os microsserviços de backend de forma isolada e segura.
