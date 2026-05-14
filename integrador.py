@@ -18,7 +18,7 @@ app.add_middleware(
 )
 
 # URLs das APIs Destino
-URL_LUTAS = "http://127.0.0.1:8001"
+URL_LUTAS = "https://betting-api-hmup.onrender.com"
 URL_LUTADORES = "https://api-lutadoressd.onrender.com/api" # API Externa
 
 NOME_INTEGRADOR = "api_integrador"
